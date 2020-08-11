@@ -5,12 +5,11 @@ import org.springframework.stereotype.Component;
 
 @Component("someDog")
 public class Dog extends Animal {
-    @Autowired
-    private Dog animal;
 
-//    public Dog(Dog animal) {
-//        this.animal = animal;
-//    }
-    public Dog () {}
+
+    @Override
+    public String toString() {
+        return "Im a Dog";
+    }
 
 }

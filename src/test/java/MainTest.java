@@ -21,6 +21,7 @@ public class MainTest {
         for (int i = 0; i < 5; i++) {
             AnimalsCage bean =
                     applicationContext.getBean(AnimalsCage.class);
+//            bean.whatAnimalSay();
             if (i == 0) {
                 time = bean.getTimer().getTime();
                 continue;
