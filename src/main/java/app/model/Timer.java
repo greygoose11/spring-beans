@@ -8,14 +8,10 @@ import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component ("timer")
-
+@Scope("singleton")
 
 public class Timer {
-//    @Autowired
-//    public ApplicationContext applicationContext;
-//    AnimalsCage bean =
-//            applicationContext.getBean(AnimalsCage.class);
-//    bean.getBean("animalsCage",AnimalsCage.class).whatAnimalSay();
+
     private Long nanoTime = System.nanoTime();
 
     public  Long getTime() {
